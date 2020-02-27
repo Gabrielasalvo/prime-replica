@@ -1,0 +1,265 @@
+* 
+{
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+
+/*body {
+    
+}
+.prime-logo {
+    
+    width: 20vw;
+}
+
+
+.flex-header {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2vh;
+    align-items: center;
+}
+
+.flex-list ul {
+    display: flex;
+}
+
+.flex-list ul li {
+    padding: 3vh;
+}
+
+.flex-list a {
+    font-size: 1.2em;
+    color: #ffff;
+}
+
+.flex-header input[type =text]{
+    width: 20vw;
+    height: 4vh;
+}
+
+
+
+
+.navegacao {
+    display: grid;
+    grid-template-areas: 
+    "cabecalho"
+    "conteudo"
+    "footer";
+    grid-template-columns: auto;
+    grid-template-rows: 50px 80vh 20vh;
+}
+
+
+.cabecalho {
+    background-color: chartreuse;
+}
+
+.conteudo {
+    display: grid;
+    background-color: chocolate;
+}
+
+.footer {
+    background-color: red;
+}
+
+
+.conteudo-destaques {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 20% 20%;
+    height: calc(100vh - 50px);
+}
+
+.hunter {
+    grid-column: 1/5;
+    grid-row:1/3    ;
+}
+
+.the-office {
+    grid-column: 1/2;
+    grid-row: 2/;
+}
+
+*/
+body {
+    background-color: #232f3e;
+}
+
+.app  {
+    display: grid;
+    grid-template-areas: 
+    "cabecalho"
+    "conteudo"
+    "footer";
+    grid-template-columns: auto;
+    grid-template-rows: 20vh 100vh 20vh;
+}
+
+.cabecalho {
+    width: 1110px;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    background-color:#fdfdfd;
+    margin-bottom: 3vh;
+}
+.cabecalho input[type =text]{
+    width: 20vw;
+    height: 4vh;
+}
+.cabecalho-lista ul {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-around;
+}
+.cabecalho-lista ul li {
+    padding: 5vh;
+}
+
+.conteudo {
+    background-color:#232f3e
+}
+
+.footer {
+    background-color: darkblue;
+    grid-area: footer;
+}
+
+.caixa {
+    align-items: flex-end;
+    display: flex;
+    width: 100%;
+}
+
+.destaques-titulo {
+    background-color: rgba(0,0, 0, 0.5);
+    color: #fdfdfd;
+    text-align: center;
+    width: 100%;
+} 
+
+.conteudo-destaques {
+    width: 1110px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 33% 33% 33% 33%;
+    height: calc(100vh - 75px);
+    grid-gap: 1vh;
+    
+}
+
+.conteudo-destaques-principal {
+
+    background-image: url(../img/hunter.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.conteudo-destaques-secundario:nth-child(2) {
+    background-image: url(../img/capita-marvel.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    
+}
+
+.conteudo-destaques-secundario:nth-child(3) {
+    background: url(../img/the-office.jpg) center / cover no-repeat;
+    grid-column:4 / 4;
+    grid-row: 2 / 3;
+}
+
+.conteudo-destaques-secundario:nth-child(4) {
+    background: url(../img/m-poppins.jpg) center / cover no-repeat;
+    grid-column:1 / 1;
+    grid-row: 2 / 2;
+
+}
+
+.conteudo-destaques-secundario:nth-child(5) {
+    background: url(../img/jack-ryan.jpg) center / cover no-repeat;
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+}
+
+.conteudo-destaques-secundario:nth-child(6) {
+    background-image: url(../img/john-wick.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    
+}
+.conteudo-destaques-secundario:nth-child(7) {
+    background-image: url(../img/bob-esponja.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    
+}
+
+.conteudo-destaques-secundario:nth-child(8) {
+    background-image: url(../img/widow.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    
+}
+
+.conteudo-destaques-secundario:nth-child(9) {
+    background-image: url(../img/big-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    
+}
+
+.conteudo-destaques-secundario:nth-child(10) {
+    background-image: url(../img/toy-story.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    
+}
+
+
+.populares {
+    padding: 10em;
+}
